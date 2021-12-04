@@ -3,12 +3,11 @@
 
 void printPattern(int no)
 {
-    int i = 0, j = 0;
-        j = no * 2;
+    int i = 0;
 
-  for(i = 1; i <= j; i++)
+  for(i = 1; i <= no; i++)
   {
-      if(i <= (j / 2) )
+      if(i <= (no / 2) )
       {
            printf(" * ");
       }
@@ -26,7 +25,7 @@ int main()
     printf("\n Enter Any Number => ");
     scanf("%d",&ino);
 
-    printPattern(ino);
+    printPattern(ino * 2);
 
     getch();
     return 0;
