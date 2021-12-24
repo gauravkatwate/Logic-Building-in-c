@@ -27,7 +27,7 @@ int main()
     scanf("%d",&EPoint);
 
     Display(SPoint,EPoint);
-
+ 
     getch();
     return 0;
 }
