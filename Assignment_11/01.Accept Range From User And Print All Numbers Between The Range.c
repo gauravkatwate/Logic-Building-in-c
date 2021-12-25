@@ -3,16 +3,16 @@
 
 void Display(int SP,int EP)
 {
+  if(SP > EP)
+  {
+      printf("\n Envalid Range");
+  }
   up:
   if(SP <= EP)
   {
      printf("  %d  ",SP);
      SP++;
      goto up;
-  }
-  else
-  {
-      printf("\n Envalid Range");
   }
 }
 
@@ -27,7 +27,7 @@ int main()
     scanf("%d",&EPoint);
 
     Display(SPoint,EPoint);
-
+ 
     getch();
     return 0;
 }
