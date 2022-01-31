@@ -8,9 +8,9 @@ void Smlstrcpy(char *str, char *str2)
         if(*str >= 97 && *str <= 122)
         {
             *str2 = *str;
-            *str2++;
+            str2++;
         }
-        *str++;
+        str++;
     }
 }
 
